@@ -13,44 +13,41 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.suvankar.chatapp;
+package com.suvankar.chatapp.models;
 
 public class MessageDataModel {
 
+    private UserDataModel user;
     private String text;
-    private String name;
     private String photoUrl;
 
     public MessageDataModel() {
     }
 
-    public MessageDataModel(String text, String name, String photoUrl) {
+    public MessageDataModel(UserDataModel user, String text, String photoUrl) {
+        this.user = user;
         this.text = text;
-        this.name = name;
         this.photoUrl = photoUrl;
+    }
+
+    public UserDataModel getUser() {
+        return user;
     }
 
     public String getText() {
         return text;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getPhotoUrl() {
         return photoUrl;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    @Override
+    public String toString() {
+        return "MessageDataModel{" +
+                "user=" + user +
+                ", text='" + text + '\'' +
+                ", photoUrl='" + photoUrl + '\'' +
+                '}';
     }
 }
