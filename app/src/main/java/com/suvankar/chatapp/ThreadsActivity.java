@@ -1,6 +1,5 @@
 package com.suvankar.chatapp;
 
-
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.database.Cursor;

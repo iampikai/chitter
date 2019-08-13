@@ -150,7 +150,7 @@ public class ChatActivity extends AppCompatActivity {
                             .setValue(tempMessage, new DatabaseReference.CompletionListener() {
                                 @Override
                                 public void onComplete(DatabaseError databaseError,
-                                                       DatabaseReference databaseReference) {
+                                                       @NonNull DatabaseReference databaseReference) {
                                     if (databaseError == null) {
                                         String key = databaseReference.getKey();
                                         putImageInStorage(uri, key);

@@ -10,7 +10,7 @@
         android:id="@+id/thumbnail"
         android:layout_width="@dimen/placeholderImage"
         android:layout_height="@dimen/placeholderImage"
-        android:background="@color/background"
+        android:background="@drawable/profile_photo_shimmer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
